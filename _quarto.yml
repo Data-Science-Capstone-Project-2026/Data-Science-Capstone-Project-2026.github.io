@@ -21,6 +21,8 @@ website:
         text: Analysis
       - href: findings.qmd
         text: Findings
+      - href: deliverables.qmd
+        text: Deliverables 
     right:
       - icon: github
         href: https://github.com/Data-Science-Capstone-Project-2026/Public_Repository
