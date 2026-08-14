@@ -5,9 +5,7 @@ author:
   - name: Seira Ramchandani
   - name: Courtney St. Onge
 ---
-::: {.banner-image}
-![](images/banner.jpg)
-:::
+<div class="hero-banner" style="background-image: url('images/banner.jpg');"></div>
 
 ## Abstract
 
