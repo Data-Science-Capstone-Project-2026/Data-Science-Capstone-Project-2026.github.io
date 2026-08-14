@@ -1,3 +1,4 @@
+<div class="hero-banner" style="background-image: url('images/banner.jpg');"></div>
 ---
 title: "Willamette Applicant Trajectory"
 subtitle: "Predicting Student College Enrollment Destination"
@@ -5,7 +6,6 @@ author:
   - name: Seira Ramchandani
   - name: Courtney St. Onge
 ---
-<div class="hero-banner" style="background-image: url('images/banner.jpg');"></div>
 
 ## Abstract
 
