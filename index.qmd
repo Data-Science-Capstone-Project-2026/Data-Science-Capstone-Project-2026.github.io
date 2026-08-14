@@ -4,6 +4,14 @@ subtitle: "Predicting Student College Enrollment Destination"
 author:
   - name: Seira Ramchandani
   - name: Courtney St. Onge
+about:
+    links:
+    - icon: file-earmark-pdf
+      text: Seira's Portfolio
+      href: https://Seira-Ram.github.io
+    - icon: file-earmark-pdf
+      text: Courtney's Portfolio
+      href: https://courtneysto.github.io
 ---
 ::: {.banner-image}
 ![](images/banner.jpg)
@@ -75,9 +83,11 @@ institutional implications for the university.
 
 Explore the project using the links above:
 
-- **[Data](data.qmd)** — where the data came from and how it was cleaned
-- **[Analysis](analysis.qmd)** — how we approached the problem
-- **[Findings](findings.qmd)** — what we learned and what it means for Admissions
+::: {.button-row}
+[Data](data.qmd){.btn .btn-primary role="button"}
+[Analysis](analysis.qmd){.btn .btn-primary role="button"}
+[Findings](findings.qmd){.btn .btn-primary role="button"}
+:::
 
 All of our code is available in our public GitHub repository:
 [Capstone2026-Applicant-Trajectory](https://github.com/Data-Science-Capstone-Project-2026/Public_Repository).
