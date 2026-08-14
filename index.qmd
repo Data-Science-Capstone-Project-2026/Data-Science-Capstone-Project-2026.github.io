@@ -4,14 +4,6 @@ subtitle: "Predicting Student College Enrollment Destination"
 author:
   - name: Seira Ramchandani
   - name: Courtney St. Onge
-about:
-    links:
-    - icon: file-earmark-pdf
-      text: Seira's Portfolio
-      href: https://Seira-Ram.github.io
-    - icon: file-earmark-pdf
-      text: Courtney's Portfolio
-      href: https://courtneysto.github.io
 ---
 ::: {.banner-image}
 ![](images/banner.jpg)
@@ -94,4 +86,8 @@ All of our code is available in our public GitHub repository:
 (Note: the underlying applicant data is confidential and is not included in
 the repo.)
 
+::: {.button-row}
+[Seira's Portfolio](https://Seira-Ram.github.io){.btn .btn-outline-primary role="button"}
+[Courtney's Portfolio](https://courtneysto.github.io){.btn .btn-outline-primary role="button"}
+:::
 *DATA 510 Capstone Project · Willamette University · Summer 2026*
