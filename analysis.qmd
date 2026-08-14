@@ -20,14 +20,18 @@ We analyzed two destination groupings as part of an iterative refinement process
 
 We used a clustering technique to see whether applicants naturally sort
 themselves into distinct groups based on their profile alone (without
-knowing where they enrolled). This produced four fairly evenly sized groups,
-distinguished mainly by academic strength, financial need, and how quickly a
-student completed their application.
+knowing where they enrolled). This produced four fairly evenly sized groups, with Figure 1 showing five features found strongly influential in differentiating clusters: academic strength, financial need, and application creation timeline.
+
+![Figure 1: Cluster Profiles (Standardized)](/images/cluster_profile_heatmap.png)
+
+The heatmap shows how each cluster compares to the overall applicant population, with red indicating a higher-than-average value and blue indicating a lower-than-average value.
 
 We then checked whether those clusters lined up with actual enrollment
-destinations, using a standard statistical test (chi-square, with a measure
-called Cramer's V for how *strong* the relationship is). The relationship
-was statistically real but practically weak, meaning cluster membership alone is not a strong standalone predictor of enrollment destination. This told us we needed a more targeted predictive model rather than relying on broad applicant groupings.
+destinations, and validated the results using a standard statistical test (chi-square, with a measure called Cramer's V for how *strong* the relationship is).
+
+![Figure 2: Cluster Membership by Destination Category](/images/cluster_destination_mix_grouped.png)
+
+The relationship was statistically real (p-value of < 0.05) but practically weak (Cramer's V of 0.076), meaning cluster membership alone is not a strong standalone predictor of enrollment destination. This told us we needed a more targeted predictive model rather than relying on broad applicant groupings.
 
 ## Building a Predictive Model
 

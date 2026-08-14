@@ -1,0 +1,48 @@
+---
+title: "Findings"
+subtitle: "What we learned, and what it means for Admissions"
+---
+## How Well Could We Actually Predict Enrollment Destination?
+We tested three models. All performed similarly, correctly predicting a
+student's destination category **around 43–45% of the time**. This represents a meaningful improvement over random guessing across four categories, but far from perfect.
+
+| Model | Overall Accuracy | Notes |
+|-------|---------|----------------|
+| Multinomial Logistic Regression | 43% | Best at identifying Local Public and Three Large Public enrollees; struggled most with Local Private |
+| Support Vector Machine | 45% | Best at identifying Local Private enrollees; struggled most with NW5 |
+| XGBoost | 43% | Most balanced across categories; best precision for NW5 |
+
+Since XGBoost was the most balanced across categories and is well-suited to handling missing data, we focused on it for finetuning and looking into its performance in more detail.
+
+MORE DETAIL
+
+
+## The Big Picture
+
+No model can say with certainty where a specific student will enroll. But
+across every approach we tried, a few clear and consistent patterns emerged
+about *what* tends to influence a student's choice.
+
+While we could group applicants into coherent profiles (strong
+academic performers, students with high financial need, longer application timelines etc.), those groupings had only a weak statistical relationship with where students actually enrolled. Destination depends on a specific *combination* of actors rather than a single broad "type" of student.
+
+## Limitations
+
+- This analysis is specific to Willamette's applicant pool and competitive
+  set; the findings may not generalize to other institutions.
+- Only three years of data and roughly 6,500 confirmed outcomes were
+  available, which limits statistical power, especially for smaller
+  destination categories.
+- Specific financial details (beyond fee waivers, need-based aid, and
+  FAFSA/EFC data) were excluded to protect student privacy, which may limit
+  our ability to explain financially driven decisions.
+- These results describe *associations*, not causes. They can help target
+  outreach, but they don't explain *why* any individual student chooses one
+  school over another.
+
+## Future Work
+
+More analysis could be completed on the interactions between features as they pertain to the enrollment destination. This would allow for more actionable results, as it would be easier to categorize students.
+The creation of an interactive model or function that would allow the Admissions and Enrollment team to insert a student's data and receive and predicted destination category would be extremely beneficial.
+
+To increase the robustness and accuracy of the model, there are a few directions that could be followed, including an increased sample size and the use of alternative modeling methods. Potential methods include Neural Networks and Naive Bayes.

@@ -60,19 +60,19 @@ relevant to their situation and interests.
 ::: {.g-col-12 .g-col-md-4 .text-center}
 <a href="data.qmd" style="display:inline-block; padding:0.5rem 1.25rem; background-color:#8E1728; color:white; border-radius:0.375rem; text-decoration:none; font-weight:500;">The Data</a>
 
-Where the data came from etc etc (EDIT)
+Where the data came from, how it was prepared, and what ethical considerations were taken into account
 :::
 
 ::: {.g-col-12 .g-col-md-4 .text-center}
 <a href="analysis.qmd" style="display:inline-block; padding:0.5rem 1.25rem; background-color:#8E1728; color:white; border-radius:0.375rem; text-decoration:none; font-weight:500;">Our Analysis</a>
 
-The methods behind the analysis, how we validated the data etc etc (EDIT)
+The creation of destination groups, clustering, and predictive modeling methods
 :::
 
 ::: {.g-col-12 .g-col-md-4 .text-center}
 <a href="findings.qmd" style="display:inline-block; padding:0.5rem 1.25rem; background-color:#8E1728; color:white; border-radius:0.375rem; text-decoration:none; font-weight:500;">Findings</a>
 
-Discussion, limitations, etc etc (EDIT)
+Discussion of model performance, key predictors, and implications for Admissions strategy
 :::
 
 :::
