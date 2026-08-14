@@ -1,0 +1,52 @@
+---
+title: "Our Analysis"
+subtitle: "Methods and Evaluation"
+---
+## Creating Target Destination Groups
+
+We needed a sensible way to group hundreds of different colleges and universities into a handful of meaningful categories. With stakeholder input, we landed on four main destination categories:
+
+- **NW5**:  Willamette's closest private peer institutions in the Pacific
+  Northwest (Reed College, Lewis & Clark College, Whitman College, and
+  University of Puget Sound)
+- **Three Large Public**: Oregon State University, University of Oregon,
+  and Portland State University
+- **Local Public**: other public colleges in Oregon and Washington
+- **Local Private**: other private colleges in Oregon and Washington
+
+We analyzed two destination groupings as part of an iterative refinement process. Our first version cast a wider geographic net and included students' campus-visit history as a predictive feature. After reviewing early results with our stakeholder at Willamette, we narrowed the geography to just Oregon and Washington and limited our features to information that's available *at the time a student applies*. Both versions told a consistent story; the second, refined version is what's presented on the Findings page.
+
+## Looking for Natural Groupings in the Data
+
+We used a clustering technique to see whether applicants naturally sort
+themselves into distinct groups based on their profile alone (without
+knowing where they enrolled). This produced four fairly evenly sized groups,
+distinguished mainly by academic strength, financial need, and how quickly a
+student completed their application.
+
+We then checked whether those clusters lined up with actual enrollment
+destinations, using a standard statistical test (chi-square, with a measure
+called Cramer's V for how *strong* the relationship is). The relationship
+was statistically real but practically weak, meaning cluster membership alone is not a strong standalone predictor of enrollment destination. This told us we needed a more targeted predictive model rather than relying on broad applicant groupings.
+
+## Building a Predictive Model
+
+We compared three modeling approaches to see which best predicted an
+applicant's likely destination:
+
+- **Multinomial Logistic Regression**: serves as an interpretable baseline for the multi-class outcome that predicts an enrollment destination group.
+- **Support Vector Machine (SVM)**:  an alternative classifier 
+- **XGBoost**: a more sophisticated model well-suited to handling missing
+  data, which is common in application records
+
+Models were evaluated using an 80/20 train-test split to ensure that there is adequate data to validate against, with no separate validation set held out. 
+
+For each model, we measured overall accuracy and looked closely at how well
+it performed *per destination category*, since we didn't want a model that
+only did well on the most common outcome. See [Findings](findings.qmd) for more information on what we found about applicant behavior.
+
+For the full technical detail on both destination category versions, see our
+[GitHub repository](https://github.com/Data-Science-Capstone-Project-2026/Public_Repository/tree/main/src).
+
+
+
