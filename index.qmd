@@ -8,7 +8,6 @@ author:
 about:
   template: marquee
   image-shape: rectangle
-  image-width: 20em
   links:
     - icon: file-earmark-pdf
       text: Seira's Portfolio
@@ -23,34 +22,13 @@ about:
 Willamette University's Admissions Office and enrollment management team
 invest significant resources in recruiting prospective students, yet a
 meaningful portion of admitted applicants ultimately choose to enroll
-elsewhere. To better allocate resources, we analyzed past enrollment data
-using Multiple Linear Regression and XGBoost to identify which applicant
-characteristics predict the type of school a student will enroll in. We
-found that an applicant's region of origin has the most impact on where
-they enroll, along with their academic strength and financial situation.
-Enrollment at Northwest 5 schools specifically is also greatly influenced by
-campus visitation and legacy status. These findings are limited by the
-relatively small sample size and time window of available data, which
-limits generalizability to other institutions. With these findings, the
-Willamette Admissions and Enrollment teams can better focus their time and
-resources on recruiting new students.
+elsewhere. This project looks at three years of Willamette applicant data joined with National Student Clearinghouse enrollment data to predict an admitted but non-enrolled student's enrollment destination category based on their application characteristics. Knowing what is most likely to influence a student's decicision allows the Admissions team to create more targeted recruitment and yield strategies. 
 
 ## The Problem
 
-Every year, Willamette University's Admissions Office works hard to recruit
-a strong incoming class — but a meaningful share of admitted students end up
-enrolling somewhere else. Right now, the office doesn't have a good,
-data-driven way to tell, at the point of application, where a student who
-isn't coming to Willamette is likely to go instead. That makes it hard to
-tailor outreach — the message that might change a student's mind about a
-small private college in Oregon is very different from the message that
-might matter to a student choosing a big public university.
+Currently, the Admissions office lacks a data-driven framework for segmenting admitted applicants by their predicted matriculation destination, which means that recruitment and yield strategies must be applied broadly rather than targeted to what differentiates Willamette from the other schools an applicant may be looking at. Understanding which type of institution a student is likely to choose would allow the team to tailor materials, financial aid messaging, and communications to what is most likely to influence a student's decision.
 
-This project builds a model that looks at an applicant's profile — things
-like where they're from, their academic record, and their financial
-situation — and predicts which *type* of school they're most likely to
-choose if not Willamette: another small private Northwest college, a large
-public university, or a local public or private school closer to home.
+This project builds a predictive model that looks at an applicant's profile characteristics and predicts which *type* of school they're most likely to choose if not Willamette: another small private Northwest college, a large public university, or a local public or private school. The results of most common predictors offer general insight and can be utilized by Admissions to inform enrollment strategy.
 
 **Research Questions:**
 
@@ -63,26 +41,19 @@ public university, or a local public or private school closer to home.
 
 ## Impact & Stakeholders
 
-**Primary stakeholders.** The primary beneficiaries of this project are
+**Primary stakeholders:** The primary beneficiaries of this project are
 William Mullen, VP for Enrollment Management, and the broader Admissions
 team at Willamette University. A well-performing model gives the Admissions
 office a practical tool for more efficient recruitment and outreach, with
 the potential to improve yield rates over time.
 
-**Indirect stakeholders.** Willamette's Marketing team stands to benefit as
+**Indirect stakeholders:** Willamette's Marketing team stands to benefit as
 well, since the model's insights could inform messaging and campaign
 strategy. Prospective students may also benefit from outreach that is more
 relevant to their situation and interests.
-
-**Organizational impact.** A reliable prediction model gives the Admissions
-office a replicable, data-informed process that can be refined each
-recruitment cycle and used to guide yield strategy. Over time, even modest
-improvements in enrollment rate can carry meaningful financial and
-institutional implications for the university.
-
 ---
 
-Explore the project using the links above:
+## Explore the Project
 
 ::: {.grid}
 
@@ -106,9 +77,9 @@ Discussion, limitations, etc etc (EDIT)
 
 :::
 
+--- 
+
 All of our code is available in our public GitHub repository:
-[Capstone2026-Applicant-Trajectory](https://github.com/Data-Science-Capstone-Project-2026/Public_Repository).
+[Willamette Applicant Trajectory - Capstone2026](https://github.com/Data-Science-Capstone-Project-2026/Public_Repository).
 (Note: the underlying applicant data is confidential and is not included in
 the repo.)
-
-*DATA 510 Capstone Project · Willamette University · Summer 2026*
