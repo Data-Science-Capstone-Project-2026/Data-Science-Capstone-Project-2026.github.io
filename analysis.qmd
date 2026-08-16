@@ -24,12 +24,14 @@ knowing where they enrolled). This produced four fairly evenly sized groups, wit
 
 ![Figure 1: Cluster Profiles (Standardized)](/images/cluster_profile_heatmap.png)
 
-The heatmap shows how each cluster compares to the overall applicant population, with red indicating a higher-than-average value and blue indicating a lower-than-average value.
+The heatmap shows how each cluster compares to the overall applicant population, with darker purple indicating a higher-than-average value and lighter purple indicating a lower-than-average value.
 
 We then checked whether those clusters lined up with actual enrollment
 destinations, and validated the results using a standard statistical test (chi-square, with a measure called Cramer's V for how *strong* the relationship is).
 
 ![Figure 2: Cluster Membership by Destination Category](/images/cluster_destination_mix_grouped.png)
+
+Destination composition is fairly even across clusters overall, with a few notable exceptions. Cluster 1 holds the highest share of Three Large Public enrollees and the lowest share of NW5 enrollees. Cluster 3, characterized by lower academic ratings, holds the highest share of Local Private enrollees and the lowest share of NW5 enrollees; however, Cluster 2, characterized by high academic ratings, also holds the largest share of Local Private enrollees alongside the largest share of NW5 enrollees, indicating that strong academic profiles are not exclusive to NW5 students. Viewed from the destination side, NW5 enrollees are most commonly drawn from Cluster 2, but Cluster 0,  a group with solid academics and average financial need, makes up an even larger proportion of NW5 enrollees and is in fact the most common cluster across nearly every destination group.
 
 The relationship was statistically real (p-value of < 0.05) but practically weak (Cramer's V of 0.076), meaning cluster membership alone is not a strong standalone predictor of enrollment destination. This told us we needed a more targeted predictive model rather than relying on broad applicant groupings.
 
