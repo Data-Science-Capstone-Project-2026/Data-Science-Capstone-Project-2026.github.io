@@ -22,7 +22,7 @@ about:
 Willamette University's Admissions Office and enrollment management team
 invest significant resources in recruiting prospective students, yet a
 meaningful portion of admitted applicants ultimately choose to enroll
-elsewhere. This project looks at three years of Willamette applicant data joined with National Student Clearinghouse enrollment data to predict an admitted but non-enrolled student's enrollment destination category based on their application characteristics. Knowing what is most likely to influence a student's decicision allows the Admissions team to create more targeted recruitment and yield strategies. 
+elsewhere. This project looks at three years of Willamette applicant data joined with National Student Clearinghouse enrollment data to predict an admitted but non-enrolled student's enrollment destination category based on their application characteristics. Knowing what is most likely to influence a student's decicision helps the Admissions and Enrollment Management teams create more targeted recruitment and yield strategies. 
 
 ## The Problem
 

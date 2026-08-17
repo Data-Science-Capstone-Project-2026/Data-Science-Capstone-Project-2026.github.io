@@ -12,7 +12,7 @@ student's destination category **around 43–45% of the time**. This represents 
 | Support Vector Machine | 45% | Best at identifying Local Private enrollees; struggled most with NW5 |
 | XGBoost | 43% | Most balanced across categories; best precision for NW5 |
 
-Since XGBoost was the most balanced across categories and is well-suited to handling missing data, we focused on it for finetuning and looking into its performance in more detail.
+Since XGBoost was the most balanced across categories and is well-suited to handling missing data (which applicant data has a lot of), we focused on it for finetuning and looking into its performance in more detail.
 
 MORE DETAIL
 

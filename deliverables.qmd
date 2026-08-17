@@ -2,12 +2,12 @@
 title: "Final Deliverables"
 ---
 
-<!-- [📄 Download Writeup](assets/writeup.pdf){.btn .btn-primary role="button"} -->
+[📄 Download Writeup](assets/writeup.pdf){.btn .btn-primary role="button"} 
 [📄 Download Poster](assets/poster.pdf){.btn .btn-primary role="button"}
 
-<!--  <iframe src="assets/poster.pdf" width="100%" height="600px"
+  <iframe src="assets/writeup.pdf" width="100%" height="800px"
   style="border: 1px solid #ddd; margin-top: 1rem;">
-</iframe> -->
+</iframe> 
 
 <iframe src="assets/poster.pdf" width="100%" height="600px"
   style="border: 1px solid #ddd; margin-top: 1rem;">
