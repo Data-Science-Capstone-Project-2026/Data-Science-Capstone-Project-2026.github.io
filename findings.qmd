@@ -14,17 +14,31 @@ student's destination category **around 43–45% of the time**. This represents 
 
 Since XGBoost was the most balanced across categories and is well-suited to handling missing data (which applicant data has a lot of), we focused on it for finetuning and looking into its performance in more detail.
 
-MORE DETAIL
+The model found that overall, **region of origin was the single strongest predictor for every destination category.** After region, the next most influential factors varied by destination:
+
+| Destination Category | 2nd Most Influential | 3rd Most Influential | 4th Most Influential |
+|---|---|---|---|
+| NW5 | SAT/ACT Superscore | First-Generation Status | Days to Application Submission |
+| Local Private | Student Athlete Status | Weighted GPA | Curriculum Rating |
+| Three Large Public | Student Athlete Status | EFC/SAI (Financial Need) | — |
+| Local Public | Days to Application Submission | Admission Plan | — |
+
+The regions that impacted the classification in each category the most were widely varied across categories. For Local Private schools, an applicant being from California meant a higher likelihood of attending, while for a Local Public school, an applicant being from California meant a much lower likelihood of attending. For Northwest 5 schools, applicants from California, states other than Washington and Oregon, and the Bellingham area of Washington are more likely to attend. 
+
+![Feature Importance for Northwest 5 School Destination.](/images/nw5_shap_beeswarm.png)
+
+![Impact of Applicant Region of Origin for Northwest 5 School Destination.](/images/nw5_shap_cat_plot.png)
+
+Additional features and destination categories are explored in the [full writeup](deliverables.qmd).
 
 
 ## The Big Picture
 
 No model can say with certainty where a specific student will enroll. But
 across every approach we tried, a few clear and consistent patterns emerged
-about *what* tends to influence a student's choice.
+about *what* tends to influence a student's choice. Using an applicant's region of origin, overall academic profile, and any financial information, one can gain a general understanding of where a student might enroll.
 
-While we could group applicants into coherent profiles (strong
-academic performers, students with high financial need, longer application timelines etc.), those groupings had only a weak statistical relationship with where students actually enrolled. Destination depends on a specific *combination* of actors rather than a single broad "type" of student.
+We found that destination depends on a specific *combination* of actors rather than a single broad "type" of student. Even if these predictions cannot be trusted to fully predict where a student will enroll, they can still provide some insight into how to attract them to Willamette. Since the models do not have an extremely high precision or recall rate, entire marketing and enrollment strategies should not be based on these results.
 
 ## Limitations
 
